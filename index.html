@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Chat App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="chat-wrapper">
+    <div class="chat-header">
+      <div class="avatar">🤖</div>
+      <div class="header-info">
+        <h3>Internee Support Bot</h3>
+        <span class="status-indicator">Online</span>
+      </div>
+      <button id="clearChatBtn" class="clear-btn" title="Clear Chat History">🗑️</button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+    </div>
+
+    <form id="chatForm" class="chat-input-area">
+      <input type="text" id="messageInput" placeholder="Type a message..." autocomplete="off" required>
+      <button type="submit" id="sendBtn" class="send-button">
+        <svg viewBox="0 0 24 24" class="send-icon">
+          <path d="M2 21l21-9L2 3v7l15 2-15 2v7z" />
+        </svg>
+      </button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
